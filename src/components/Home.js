@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
+import useAuth from "../auth/useAuth";
 
 const Home = () => {
-    return (
-        <div>
-            Home
-        </div>
-    )
-}
+  const user = useAuth();
+  console.log({ user });
 
-export default Home
+  return <div>Home</div>;
+};
+
+export default Home;
