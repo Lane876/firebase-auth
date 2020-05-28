@@ -9,10 +9,14 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-around",
   },
+  logoutbutton: {
+    display: 'flex',
+    alignItems: 'center',
+  },
   //Login
   main: {
     marginTop: theme.spacing(10),
-    width: "450px",
+    width: "400px",
     marginLeft: "auto",
     marginRight: "auto",
     display: "flex",
@@ -25,6 +29,7 @@ export const useStyles = makeStyles((theme) => ({
 
   paper: {
     padding: theme.spacing(2),
+    width: '400px',
   },
 
   signin: {
@@ -36,5 +41,10 @@ export const useStyles = makeStyles((theme) => ({
   register: {
     marginTop: theme.spacing(3),
     cursor: "pointer",
+  },
+  forgotpassword: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: theme.spacing(5)
   },
 }));

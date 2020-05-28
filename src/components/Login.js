@@ -13,6 +13,7 @@ import { useStyles } from "../styles";
 import useFormValidation from "../auth/useFormValidation";
 import validateLogin from "../auth/validateLogin";
 import firebase from "../firebase";
+import { Link } from 'react-router-dom'
 
 const INITIAL_STATE = {
   name: "",
@@ -123,6 +124,10 @@ const Login = (props) => {
             {login ? "Sign in" : "Sign up"}
           </Typography>
         </form>
+        {!login && <Button component={Link} to='/forgotpassword' className={classes.forgotpassword} >
+          Forgot password?
+      </Button>}
+
       </Paper>
     </main>
   );
